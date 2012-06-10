@@ -1,0 +1,9 @@
+- Mergesort
+- Quicksort
+- Hash Table
+- Loops in Linked List
+- Tree structures
+- Graph Structures
+
+- Bash scripts to time sort implementations
+- sort comparison visualizations
