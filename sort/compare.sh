@@ -2,12 +2,12 @@
 
 # Testing Merge Sort
 
-for a in `seq 10000 10000 800000`
+for a in `seq 10000 10000 300000`
 do
     echo -n .
     valuea="$(./merge $a | cut -d: -f2)"
     valueb="$(./quick $a | cut -d: -f2)"
-    diff=`echo $valuea - $valueb`
+    diff=$(echo $valueb-$value | bc)
     values="$values $diff"
 done
 
@@ -20,4 +20,5 @@ do
     bloated_values="$bloated_values $tmp"
 done
 
+echo $values
 spark $bloated_values
